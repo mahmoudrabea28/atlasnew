@@ -11,118 +11,117 @@
 <head>
 <meta charset="UTF-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
-<meta name="viewport" content="width=device-width, minimum-scale=1.0">
 <title>Atlas_test</title>
 <!-- write your code here -->
 <style>
-  /* body {
-	overflow:hidden;
+	/* body {
+	  overflow:hidden;
+	}
+	#animation_container, #_preload_div_ {
+	  position:absolute;
+	  margin:auto;
+	  left:-100%;right:-100%;
+	  top:-100%;bottom:-100%;
+	} */
+	body{
+	   /* transform: rotate(90deg); */
+		  /* transform-origin: left top; */
+		  max-height: 803px;
+		  max-width: 1600px;
+		  display: flex;
+  
+		  justify-content: center;
+		  align-items: center;
+		  text-align: center;
+	  }
+	  #dom_overlay_container{
+		  display: flex;
+  
+		  max-height: 803px;
+		  max-width: 1600px;
+		  justify-content: center;
+		  align-items: center;
+		  text-align: center;
+	  }
+	  #animation_container{
+		  display: flex;
+  
+		  max-height: 803px;
+		  max-width: 1600px;
+		  justify-content: center;
+		  align-items: center;
+		  text-align: center;
+	  }
+	  #canvas{
+		  max-height: 803px;
+		  max-width: 1200px;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  text-align: center;
+		  /* margin-left: 300px; */
+	  }
+	  #_preload_div_{
+		  display: flex;
+  
+		  max-height: 803px;
+		  max-width: 1600px;
+		  justify-content: center;
+		  align-items: center;
+		  text-align: center;
+	  }
+	  @media (max-width: 600px) { 
+		  body{
+	   /* transform: rotate(90deg); */
+		  /* transform-origin: left top; */
+		  max-height: 603px;
+		  max-width: 600px;
+		  display: block;
+  
+		  justify-content: center;
+		  align-items: center;
+		  text-align: center;
+	  }
+	  #dom_overlay_container{
+		  display: block;
+  
+		  max-height: 603px;
+		  max-width: 600px;
+		  justify-content: center;
+		  align-items: center;
+		  text-align: center;
+	  }
+	  #animation_container{
+		  display: block;
+  
+		  max-height: 603px;
+		  max-width: 600px;
+		  justify-content: center;
+		  align-items: center;
+		  text-align: center;
+	  }
+	  #canvas{
+		  max-height: 603px;
+		  max-width: 600px;
+		  display: block;
+		  justify-content: center;
+		  align-items: center;
+		  text-align: center;
+		  /* margin-left: 300px; */
+	  }
+	  #_preload_div_{
+		  display: block;
+  
+		  max-height: 603px;
+		  max-width: 600px;
+		  justify-content: center;
+		  align-items: center;
+		  text-align: center;
+	  }
   }
-  #animation_container, #_preload_div_ {
-	position:absolute;
-	margin:auto;
-	left:-100%;right:-100%;
-	top:-100%;bottom:-100%;
-  } */
-  body{
-	 /* transform: rotate(90deg); */
-        /* transform-origin: left top; */
-		max-height: 803px;
-		max-width: 1600px;
-		display: flex;
-
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}
-	#dom_overlay_container{
-		display: flex;
-
-		max-height: 803px;
-		max-width: 1600px;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}
-	#animation_container{
-		display: flex;
-
-		max-height: 803px;
-		max-width: 1600px;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}
-	#canvas{
-		max-height: 803px;
-		max-width: 1200px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		/* margin-left: 300px; */
-	}
-	#_preload_div_{
-		display: flex;
-
-		max-height: 803px;
-		max-width: 1600px;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}
-	@media (max-width: 800px) { 
-		body{
-/* 	 transform: rotate(90deg); */
-        /* transform-origin: left top; */
-		max-height: 803px;
-		max-width: 800px;
-		display: block;
-
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}
-	#dom_overlay_container{
-		display: block;
-
-		max-height: 803px;
-		max-width: 800px;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}
-	#animation_container{
-		display: block;
-
-		max-height: 803px;
-		max-width: 800px;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}
-	#canvas{
-		max-height: 803px;
-		max-width: 800px;
-		display: block;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		/* margin-left: 300px; */
-	}
-	#_preload_div_{
-		display: block;
-
-		max-height: 803px;
-		max-width: 800px;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-	}
-}
-</style>
+  </style>
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="Atlas_test.js?1717233995329"></script>
+<script src="Atlas_test.js?1717246306162"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -176,6 +175,6 @@ function handleComplete(evt,comp) {
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1800px; height:1200px; position: absolute; left: 0px; top: 0px; display: none;">
 		</div>
 	</div>
-    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:1200px; width: 1800px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1717233995330 style='vertical-align: middle; max-height: 100%'/></div>
+    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:1200px; width: 1800px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1717246306164 style='vertical-align: middle; max-height: 100%'/></div>
 </body>
 </html>
