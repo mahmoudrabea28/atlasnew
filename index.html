@@ -12,29 +12,9 @@
 <meta charset="UTF-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
 <title>Atlas_test</title>
-<style>
-body{
-	 transform: rotate(90deg);
-        /* transform-origin: left top; */
-		max-height: 1000px;
-		max-width: 800px;
-	}
-	#dom_overlay_container{
-		max-height: 1000px;
-		max-width: 800px;
-	}
-	#animation_container{
-		max-height: 1000px;
-		max-width: 800px;
-	}
-	#canvas{
-		max-height: 1000px;
-		max-width: 800px;
-	}
-</style>
 <!-- write your code here -->
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="Atlas_test.js?1717165889597"></script>
+<script src="Atlas_test.js?1717229838560"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -80,9 +60,9 @@ function handleComplete(evt,comp) {
 <!-- write your code here -->
 </head>
 <body onload="init();" style="margin:0px;">
-	<div id="animation_container" style="background-color:rgba(0, 0, 51, 1.00); width:1800px; height:500px">
+	<div id="animation_container" style="background-color:rgba(0, 0, 51, 1.00); width:1800px; height:1200px">
 		<canvas id="canvas" width="1800" height="1200" style="position: absolute; display: block; background-color:rgba(0, 0, 51, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1800px; height:500px; position: absolute; left: 0px; top: 0px; display: block;">
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1800px; height:1200px; position: absolute; left: 0px; top: 0px; display: block;">
 		</div>
 	</div>
 </body>
